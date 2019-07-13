@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	
+
+
+
+
+
+    
+    
+
+    
+
+    <title>CodeLouisville Bootstrap Project</title>
+</head>
+<body>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav> --><div id="list-builder"></div>
+        <div id="popup-box">
+            <img src="close.png" id="popup-close" />
+            <div id="popup-box-content">
+                <h1 style="font-size: 36px !important; text-align: center;">Subscribe to The Movie Maven Newsletter</h1>
+                <p>
+                    Stay up to date on the latest in web, mobile, and game development, plus receive exclusive content by
+                    subscribing to our newsletter.
+                </p>
+                <form id="popup-form" action="https://email_list_service_api.com">
+                    <input type="hidden" name="list" value="key_list_etc" />
+                    <input type="text" name="name" placeholder="Full Name" />
+                    <input type="text" name="email" placeholder="Email Address" />
+                    <button type="button" name="subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+      
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand white" href="#">The Movie Maven</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trailers</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav> --> 
+
+        
+    
+
+    <header class="jumbotron">
+
+    	  <h1 class="display-4"><span style="font-size: 32px; color: #94251e;">THE MOVIE MAVEN PRESENTS:</span><br>
+    	  TOP 10 WORLDWIDE BOX OFFICE</h1>
+  
+
+    </header>
+
+
+    <div class="container-fluid top-row">
+    	<div class="row">
+    	<span class="introText">The data in this list is from <a href="https://www.boxofficemojo.com/alltime/world/" target="_blank">Box Office Mojo</a></span>
+    	</div>
+    </div>	
+
+    <div class="container-fluid new-one">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 1: Avatar</h1>
+            <h2>Worldwide Gross: $2,787,965,087</h2>
+             
+            <div class="text-background">
+            <p class="text-padding">Avatar (marketed as James Cameron's Avatar) is a 2009 American epic science fiction film directed, written, produced, and co-edited by James Cameron and stars Sam Worthington, Zoe Saldana, Stephen Lang, Michelle Rodriguez, and Sigourney Weaver. The film is set in the mid-22nd century when humans are colonizing Pandora, a lush habitable moon of a gas giant in the Alpha Centauri star system, in order to mine the mineral unobtanium, a room-temperature superconductor. The expansion of the mining colony threatens the continued existence of a local tribe of Na'vi – a humanoid species indigenous to Pandora. The film's title refers to a genetically engineered Na'vi body operated from the brain of a remotely located human that is used to interact with the natives of Pandora.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6ziBFh3V1aM" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+    <div class="container-fluid new-two">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 2: Avengers Endgame</h1>
+            <h2>Worldwide Gross: $2,751,645,367</h2> 
+
+             <div class="text-background">  
+            <p class="text-padding">Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers, 2015's Avengers: Age of Ultron, and 2018's Avengers: Infinity War and the twenty-second film in the Marvel Cinematic Universe (MCU). It was directed by Anthony and Joe Russo, written by Christopher Markus and Stephen McFeely, and features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Bradley Cooper, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse the damage caused by Thanos in Infinity War.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TcMBFSGVi1c" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+    <div class="container-fluid new-three">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 3: Titanic</h1>
+            <h2>Worldwide Gross: $2,187,463,944</h2>
+
+            <div class="text-background">     
+            <p class="text-padding">Titanic is a 1997 American epic romance and disaster film directed, written, co-produced, and co-edited by James Cameron. A fictionalized account of the sinking of the RMS Titanic, it stars Leonardo DiCaprio and Kate Winslet as members of different social classes who fall in love aboard the ship during its ill-fated maiden voyage.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2e-eXJ6HgkQ" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+     <div class="container-fluid new-four">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 4: Star Wars The Force Awakens</h1>
+            <h2>Worldwide Gross: $2,068,223,624	 </h2>
+
+            <div class="text-background">     
+            <p class="text-padding">Set 30 years after Return of the Jedi, the film follows Rey, Finn, and Poe Dameron's search for Luke Skywalker and their fight in the Resistance, led by General Leia Organa and veterans of the Rebel Alliance, against Kylo Ren and the First Order, a successor to the Galactic Empire. It is the seventh film in the nine-part “Skywalker saga”. The film stars Harrison Ford, Mark Hamill, Carrie Fisher, Adam Driver, Daisy Ridley, John Boyega, Oscar Isaac, Lupita Nyong'o, Andy Serkis, Domhnall Gleeson, Anthony Daniels, Peter Mayhew, and Max von Sydow. </p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sGbxmsDFVnE" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+  
+
+
+    <div class="container-fluid new-five">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 5: Avengers Infinity War</h1>
+            <h2>Worldwide Gross: $2,048,359,754</h2>
+
+            <div class="text-background">     
+            <p class="text-padding">Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. In the film, the Avengers and the Guardians of the Galaxy attempt to prevent Thanos from amassing the all-powerful Infinity Stones in a quest to wipe out half of all life in the universe.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6ZfuNTqbHE8" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+
+
+     <div class="container-fluid new-six">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 6: Jurassic World</h1>
+            <h2>Worldwide Gross: $1,671,713,208</h2>
+
+            <div class="text-background">     
+            <p class="text-padding">Set 22 years after the events of Jurassic Park, Jurassic World takes place on the same fictional Central American island of Isla Nublar, which is located off the Pacific coast of Costa Rica, where a theme park of cloned dinosaurs has operated for nearly a decade. The park plunges into chaos when a genetically-engineered dinosaur escapes from its enclosure and goes on a rampage.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vn9mMeWcgoM" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+
+
+
+
+     <div class="container-fluid new-seven">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 7: The Avengers</h1>
+            <h2>Worldwide Gross: $1,518,812,988</h2>
+
+            <div class="text-background">     
+            <p class="text-padding">Marvel's The Avengers is a 2012 American superhero film based on the Marvel Comics superhero team of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sixth film in the Marvel Cinematic Universe (MCU). The film was written and directed by Joss Whedon and features an ensemble cast that includes Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the titular Avengers team, alongside Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury, director of the spy agency S.H.I.E.L.D., recruits Tony Stark, Steve Rogers, Bruce Banner, and Thor to form a team that must stop Thor's brother Loki from subjugating Earth.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eOrNdBpGMv8" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+
+
+     <div class="container-fluid new-eight">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 8: Furious 7</h1>
+            <h2>Worldwide Gross: $1,516,045,911</h2>
+
+            <div class="text-background">     
+            <p class="text-padding">Fast & Furious 7 (alternatively known as Furious 7 or Fast Seven) is a 2015 American action film directed by James Wan and written by Chris Morgan. It is the seventh installment in The Fast and the Furious franchise. The film stars Vin Diesel, Paul Walker, Dwayne Johnson, Michelle Rodriguez, Tyrese Gibson, Chris "Ludacris" Bridges, Jordana Brewster, Djimon Hounsou, Kurt Russell, and Jason Statham. Furious 7 follows Dominic Toretto (Diesel), Brian O'Conner (Walker), and the rest of their team, who have returned to the United States to live normal lives after securing amnesty for their past crimes in Fast & Furious 6 (2013), until Deckard Shaw (Statham), a rogue special forces assassin seeking to avenge his comatose younger brother, puts the team in danger once again.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yISKeT6sDOg" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+
+
+       <div class="container-fluid new-nine">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 9: Avengers Age Of Ultron</h1>
+            <h2>Worldwide Gross: $1,405,403,694</h2>
+
+            <div class="text-background">     
+            <p class="text-padding">Avengers: Age of Ultron is a 2015 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers and the eleventh film in the Marvel Cinematic Universe (MCU). The film was written and directed by Joss Whedon and features an ensemble cast that includes Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson, Jeremy Renner, Don Cheadle, Aaron Taylor-Johnson, Elizabeth Olsen, Paul Bettany, Cobie Smulders, Anthony Mackie, Hayley Atwell, Idris Elba, Stellan Skarsgård, James Spader, and Samuel L. Jackson. In the film, the Avengers fight Ultron, an artificial intelligence obsessed with causing human extinction.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tmeOjFno6Do" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+
+
+ <div class="container-fluid new-ten">
+      <div class="row">
+          <div style="margin-bottom: 50px"><h1>Number 10: Black Panther</h1>
+            <h2>Worldwide Gross: $1,346,913,161</h2>
+
+            <div class="text-background">     
+            <p class="text-padding">Black Panther is a 2018 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the eighteenth film in the Marvel Cinematic Universe (MCU). The film is directed by Ryan Coogler, who co-wrote the screenplay with Joe Robert Cole, and stars Chadwick Boseman as T'Challa / Black Panther, alongside Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman, Daniel Kaluuya, Letitia Wright, Winston Duke, Angela Bassett, Forest Whitaker, and Andy Serkis. In Black Panther, T'Challa is crowned king of Wakanda following his father's death, but his sovereignty is challenged by an adversary who plans to abandon the country's isolationist policies and begin a global revolution.</p></div></div>
+            <div class="embed-responsive embed-responsive-16by9" style="width: 70%;">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xjDjIWPwcPU" style="border:2px solid white" allowfullscreen></iframe>
+        </div>
+              </div>
+
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+
+
+   
+
+   <footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        
+       <h1>The Movie Maven</h1>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Pages</h5>
+
+        <ul class="list-unstyled">
+          <li class="footer-links">
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#!">News</a>
+          </li>
+          <li>
+            <a href="#!">Reviews</a>
+          </li>
+          <li>
+            <a href="#!">Trailers</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Info</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">About</a>
+          </li>
+          <li>
+            <a href="#!">Advertise</a>
+          </li>
+          <li>
+            <a href="#!">Contact</a>
+          </li>
+          <li>
+            <a href="#!">Privacy & Terms</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#"> Movie Maven</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+  
+
+
+   
+<script type="text/javascript" src='js/main.js'></script>
+
+   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="list-builder.js"></script>
+
+
+</body>
+</html>
