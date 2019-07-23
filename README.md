@@ -8,7 +8,7 @@ To view this project you do not need any special requirments. All you need is a 
 
 To view this proect, on the main page of this repository, click on the green button labeled "Clone or Download".
 
-Now, click on "Download Zip".
+Now, click on "Download ZIP".
 
 The project will download to your computer. You will need to unzip the .zip file.
 
