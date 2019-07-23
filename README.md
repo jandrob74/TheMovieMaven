@@ -6,7 +6,7 @@ film along with a trailer.
 
 To view this project you do not need any special requirments. All you need is a computer and web browser.
 
-To view this proect, on the main page of this repository, click on the green button labeled "Clone or Download".
+To view this proect, on the main page of this repository, click on the green button labeled "Clone or download".
 
 Now, click on "Download ZIP".
 
