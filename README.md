@@ -4,12 +4,15 @@ This project is a single web page for a fictional website called The Movie Maven
 This page lists the top 10 highest grossing films worldwide. It gives a description of each
 film along with a trailer.
 
-To view this project you do not need any special requirments. All you need is a computer and web browser.
+To view this project, lick on the green button labeled "Clone or download".
 
-To view this proect, on the main page of this repository, click on the green button labeled "Clone or download".
+In the project folder, open the index.html file in your favorite web browser
 
-Now, click on "Download ZIP".
+This project hits all required requirement.
 
-The project will download to your computer. You will need to unzip the .zip file.
+1. This project is fully responsive. I tested it on multiple browsers on multiple computers. There is a responsive newsletter signup popup that is visible on large screens, but it does not show on smaller screens. The navigation menu turns to a hamburger menu on smaller devices. 
+2. The project has more than 3 custom-written CSS selectors/rules.
+3. This project has the required javascript. One is for the subscribe popup and the other is for fitting the header image to fit the way I needed.
+4. All files, (HTML, CSS, JS) have comments for clarification and noting major sections of code.
+5. This is a unique project.
 
-In the project folder, open the index.html file in your favorite web browser.
